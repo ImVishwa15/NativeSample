@@ -13,7 +13,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        ComposeDialog.shared.email(self) { (_, _) in
+        ComposeDialog.shared.email(self, Composer("Graet", "Good", ["1"])) { (_, _) in
             
         }
     }

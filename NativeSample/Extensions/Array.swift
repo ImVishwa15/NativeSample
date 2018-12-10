@@ -21,7 +21,7 @@ public extension Array {
 
 public extension Array where Element: Equatable {
     @discardableResult
-    public mutating func remove(element: Element) -> Index? {
+    public mutating func remove(_ element: Element) -> Index? {
         guard let index = index(of: element) else { return nil }
         remove(at: index)
         return index
@@ -29,7 +29,7 @@ public extension Array where Element: Equatable {
     
     @discardableResult
     public mutating func remove(elements: [Element]) -> [Index] {
-        return elements.compactMap { remove(element: $0) }
+        return elements.compactMap { remove($0) }
     }
 }
 
