@@ -117,8 +117,21 @@ extension UIFont {
         }
     }
     
+    public static func system(_ fontType: FontType, _ size: CGFloat) -> UIFont {
+        if #available(iOS 8.2, *) {
+            return UIFont.systemFont(ofSize: size, weight: fontType.fontWeight)
+        } else {
+            return self.createFont(.roboto, fontType, size)
+        }
+    }
+    
     //MARK:  create font
     static func createFont(_ fontName: FontName = .roboto, _ fontType: FontType, _ fontSize: FontSize) -> UIFont {
         return UIFont.init(name: fontName.name + fontType.type, size: fontSize.size)!
     }
+    
+    static func createFont(_ fontName: FontName = .roboto, _ fontType: FontType, _ size: CGFloat) -> UIFont {
+        return UIFont.init(name: fontName.name + fontType.type, size: size)!
+    }
+
 }

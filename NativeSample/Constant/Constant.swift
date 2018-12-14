@@ -18,12 +18,14 @@ public struct CustomColor {
     static let purple = UIColor("5856D6")
     static let pink = UIColor("FF2D55")
     static let white = UIColor("FFFFFF")
-    static let customGray = UIColor("EFEFF4")
     static let lightGray = UIColor("E5E5EA")
     static let lightGray2 = UIColor("D1D1D6")
     static let midGray = UIColor("C7C7CC")
     static let gray = UIColor("8E8E93")
     static let black = UIColor("000000")
+    static let darkGray = UIColor("6D6D72")
+    static let customGray = UIColor("EFEFF4")
+
 }
 
 

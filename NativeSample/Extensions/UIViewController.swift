@@ -57,5 +57,17 @@ extension UIViewController {
 
 }
 
-
+extension UIViewController {
+    
+    private func storyboard() -> UIStoryboard? {
+        return UIStoryboard(name: "Main", bundle: nil)
+    }
+    
+    func signInVC() -> UIViewController {
+        if let signVC = storyboard()?.instantiateViewController(withIdentifier: SignInViewController.identifier) as? SignInViewController {
+            return signVC
+        }
+        return UIViewController()
+    }
+}
 
