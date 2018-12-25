@@ -40,6 +40,8 @@ public let forgetPasswordComment: String = "Please enter your registered email a
 
 //  Constant  
 
+let KAppDelegate: AppDelegate = UIApplication.shared.delegate as! AppDelegate
+
 let textFieldTag = 100
 let buttonTag = 1
 
