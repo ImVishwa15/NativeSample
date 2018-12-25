@@ -60,6 +60,11 @@ class WalkThroughVC: UIViewController {
     
     var walkThroughs = [WalkThrough]()
     
+    //MARK:  Identifier
+    static var identifier: String {
+        return "WalkThroughVC"
+    }
+    
     // MARK:  View Life Cycle
     override func viewDidLoad() {
         super.viewDidLoad()

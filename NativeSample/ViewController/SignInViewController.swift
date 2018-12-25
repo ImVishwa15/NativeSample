@@ -121,8 +121,11 @@ class SignInViewController: UITableViewController {
         button.setLoadingMode()
         emailField.isEnabled = false
         passwordField.isEnabled = false
+        
         // Call API
         
+        KAppDelegate.navigateToHomeController()
+        button.unsetLoadingMode()
     }
     
     // MARK:  Check Validation

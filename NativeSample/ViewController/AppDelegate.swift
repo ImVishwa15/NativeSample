@@ -54,6 +54,18 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         self.saveContext()
     }
 
+    func navigateToHomeController() {
+       if let tabBarController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: TabBarController.identifier) as? TabBarController {
+            self.window?.rootViewController = tabBarController
+        }
+    }
+    
+    func walkThroughViewController() {
+        if let tabBarController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: WalkThroughVC.identifier) as? WalkThroughVC {
+            self.window?.rootViewController = tabBarController
+        }
+    }
+
     // MARK: - Core Data stack
 
     lazy var persistentContainer: NSPersistentContainer = {

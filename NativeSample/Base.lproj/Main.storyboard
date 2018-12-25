@@ -196,6 +196,86 @@
             </objects>
             <point key="canvasLocation" x="1678" y="9"/>
         </scene>
+        <!--Notification-->
+        <scene sceneID="lg1-Df-eBx">
+            <objects>
+                <viewController id="F42-vV-GkZ" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="NdJ-Ql-Zhw">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="MDI-BB-ryb"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Notification" id="xLO-ss-uoP"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="c2d-xB-IL2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="798" y="1512"/>
+        </scene>
+        <!--Home-->
+        <scene sceneID="VQF-2l-XNb">
+            <objects>
+                <viewController storyboardIdentifier="HomeViewController" id="doK-e3-h8J" customClass="HomeViewController" customModule="NativeSample" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="A0n-Fn-Xsw">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IeX-Xz-RzC">
+                                <rect key="frame" x="159.5" y="318.5" width="56" height="30"/>
+                                <state key="normal" title="Log out "/>
+                                <connections>
+                                    <action selector="logoutButtonAction:" destination="doK-e3-h8J" eventType="touchUpInside" id="UnH-E6-ROd"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="IeX-Xz-RzC" firstAttribute="centerX" secondItem="A0n-Fn-Xsw" secondAttribute="centerX" id="LaB-jT-FYZ"/>
+                            <constraint firstItem="IeX-Xz-RzC" firstAttribute="centerY" secondItem="A0n-Fn-Xsw" secondAttribute="centerY" id="SL8-pM-BZ5"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="bbB-fn-pRy"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Home" id="yAc-EO-4EL"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fah-4v-fzn" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="797.60000000000002" y="823.53823088455783"/>
+        </scene>
+        <!--Profile-->
+        <scene sceneID="EuG-xG-YZw">
+            <objects>
+                <viewController id="Nl3-mg-ThJ" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="keW-Xr-wUL">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.59215686270000001" green="0.81568627449999997" blue="0.41176470590000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="Tca-pf-GKC"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Profile" id="hud-0x-fdS"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MbR-0w-eTs" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1633" y="922"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="7j2-BJ-iYT">
+            <objects>
+                <tabBarController storyboardIdentifier="TabBarController" id="4gd-Gj-J7O" customClass="TabBarController" customModule="NativeSample" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="0E5-sL-RdQ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="doK-e3-h8J" kind="relationship" relationship="viewControllers" id="QiI-2Q-PMH"/>
+                        <segue destination="F42-vV-GkZ" kind="relationship" relationship="viewControllers" id="MJh-DR-x3q"/>
+                        <segue destination="Nl3-mg-ThJ" kind="relationship" relationship="viewControllers" id="Sjc-XD-3br"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="D2i-vS-lzW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-103" y="1002"/>
+        </scene>
         <!--Sign Up View Controller-->
         <scene sceneID="MoM-rn-H3t">
             <objects>

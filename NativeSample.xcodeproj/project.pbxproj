@@ -31,6 +31,8 @@
 		C3B057B321D2093B00F1BE68 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3B057B221D2093B00F1BE68 /* User.swift */; };
 		C3B057B521D20F8E00F1BE68 /* DropDownCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3B057B421D20F8E00F1BE68 /* DropDownCell.swift */; };
 		C3B057BE21D2109600F1BE68 /* IQDropDownTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = C3B057BD21D2109600F1BE68 /* IQDropDownTextField.m */; };
+		C3B057C121D2236C00F1BE68 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3B057C021D2236C00F1BE68 /* TabBarController.swift */; };
+		C3B057C321D2238700F1BE68 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3B057C221D2238700F1BE68 /* HomeViewController.swift */; };
 		C3B3DDC621C0D5F5001CA040 /* UITableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3B3DDC521C0D5F5001CA040 /* UITableView.swift */; };
 		C3B3DDC821C0DA3D001CA040 /* UICollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3B3DDC721C0DA3D001CA040 /* UICollectionView.swift */; };
 		C3C9A50121BA7BB10078186F /* ConnectionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3C9A50021BA7BB10078186F /* ConnectionManager.swift */; };
@@ -128,6 +130,8 @@
 		C3B057BB21D2109500F1BE68 /* NativeSample-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NativeSample-Bridging-Header.h"; sourceTree = "<group>"; };
 		C3B057BC21D2109600F1BE68 /* IQDropDownTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IQDropDownTextField.h; sourceTree = "<group>"; };
 		C3B057BD21D2109600F1BE68 /* IQDropDownTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IQDropDownTextField.m; sourceTree = "<group>"; };
+		C3B057C021D2236C00F1BE68 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		C3B057C221D2238700F1BE68 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		C3B3DDC521C0D5F5001CA040 /* UITableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITableView.swift; sourceTree = "<group>"; };
 		C3B3DDC721C0DA3D001CA040 /* UICollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UICollectionView.swift; sourceTree = "<group>"; };
 		C3C9A50021BA7BB10078186F /* ConnectionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectionManager.swift; sourceTree = "<group>"; };
@@ -268,6 +272,7 @@
 				C3DF9A4021AD4C8600C7D245 /* SignInViewController.swift */,
 				C3B057B021D1FFD200F1BE68 /* SignUpViewController.swift */,
 				C3B057AE21D1E91500F1BE68 /* ForgetPasswordVC.swift */,
+				C3B057BF21D222F300F1BE68 /* TabBarController */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -357,6 +362,15 @@
 			path = IQDropDownTextField;
 			sourceTree = "<group>";
 		};
+		C3B057BF21D222F300F1BE68 /* TabBarController */ = {
+			isa = PBXGroup;
+			children = (
+				C3B057C021D2236C00F1BE68 /* TabBarController.swift */,
+				C3B057C221D2238700F1BE68 /* HomeViewController.swift */,
+			);
+			path = TabBarController;
+			sourceTree = "<group>";
+		};
 		C3DF9A0321AD4ACC00C7D245 = {
 			isa = PBXGroup;
 			children = (
@@ -403,8 +417,8 @@
 				C391F4EE21AE65970013D68B /* Localization */,
 				C3DF9A4221AD4D6F00C7D245 /* Extensions */,
 				C39113B321C38E6A006701F8 /* Model */,
-				C39113B421C38E75006701F8 /* ViewController */,
 				C3AC2BE921C1103700FAF226 /* UITableViewCell */,
+				C39113B421C38E75006701F8 /* ViewController */,
 				C3B057B621D2106200F1BE68 /* Library */,
 				C3DF9A1321AD4ACC00C7D245 /* Main.storyboard */,
 				C3DF9A1921AD4ACD00C7D245 /* Assets.xcassets */,
@@ -799,6 +813,7 @@
 				C3DF9A5521AD68AA00C7D245 /* UIDevice.swift in Sources */,
 				C3ED62A521B13191008D34A0 /* Date.swift in Sources */,
 				C3AC2BE421C10C4C00FAF226 /* TextFieldCell.swift in Sources */,
+				C3B057C121D2236C00F1BE68 /* TabBarController.swift in Sources */,
 				C3A7779921B54FC300EB4252 /* RateApp.swift in Sources */,
 				C3DF9A5721AD6BE900C7D245 /* UITextField.swift in Sources */,
 				C391F4E921AE63350013D68B /* UIApplication.swift in Sources */,
@@ -818,6 +833,7 @@
 				C3ED62A921B131B9008D34A0 /* Float.swift in Sources */,
 				C3A777A221B55DE500EB4252 /* ImagePickerController.swift in Sources */,
 				C3DF9A4721AD4E5900C7D245 /* Animation.swift in Sources */,
+				C3B057C321D2238700F1BE68 /* HomeViewController.swift in Sources */,
 				C3ED62A321B1317E008D34A0 /* String.swift in Sources */,
 				C3B057B121D1FFD200F1BE68 /* SignUpViewController.swift in Sources */,
 				C3ED62AB21B131C6008D34A0 /* Double.swift in Sources */,

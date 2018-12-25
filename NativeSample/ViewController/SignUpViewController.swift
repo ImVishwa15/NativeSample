@@ -173,8 +173,11 @@ class SignUpViewController: UITableViewController {
         confirmPasswordField.isEnabled = false
         genderField.isEnabled = false
         dobField.isEnabled = false
-        // Call API
         
+        // Call API
+        KAppDelegate.navigateToHomeController()
+        button.unsetLoadingMode()
+
     }
     
     // MARK:  Check Validation
