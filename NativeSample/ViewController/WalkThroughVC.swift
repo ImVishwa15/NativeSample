@@ -63,7 +63,7 @@ class WalkThroughVC: UIViewController {
     // MARK:  View Life Cycle
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+                
         initialization()
     }
     
@@ -81,7 +81,7 @@ class WalkThroughVC: UIViewController {
             case .signIn:
                 self.navigationController?.pushViewController(signInVC(), animated: true)
             case .signUp:
-                break
+                self.navigationController?.pushViewController(signUpVC(), animated: true)
             }
         }
     }

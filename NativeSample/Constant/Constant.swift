@@ -8,6 +8,44 @@
 
 import UIKit
 
+//  Message  
+
+public let signInTitle: String = "Sign In"
+public let forgetPasswordTitle: String = "Forget Password"
+public let signUpTitle: String = "Sign Up"
+public let nameTitle: String = "Username"
+public let namePlaceholder: String = "abc"
+public let male: String = "Male"
+public let female: String = "Female"
+public let genderTitle: String = "Gender"
+public let genderPlaceholder: String = "Male"
+public let dobTitle: String = "Date of Birth"
+public let dobPlaceholder: String = "dd/mm/yyyy"
+public let emailTitle: String = "Email"
+public let emailPlaceholer: String = "example@icloud.com"
+public let passwordTitle: String = "Password"
+public let passwordPlaceholer: String = "required"
+public let confirmPasswordTitle: String = "Confirm Password"
+public let enterEmailAddress: String = "Please enter email address"
+public let enterValidEmailAddress: String = "Enter valid email address"
+public let enterPassword: String = "Please enter Password"
+public let enterDOB: String = "Please enter date of birth"
+public let enterName: String = "Please enter name"
+public let selectGender: String = "Please select Gender"
+public let enterConfirmPassword: String = "Please confirm password"
+public let confirmPasswordNotMatched: String = "Password and confirm password does not matched"
+public let signInComment: String = "Please enter a pair of login and password"
+public let forgetPasswordComment: String = "Please enter your registered email address to send reset password instruction"
+
+
+//  Constant  
+
+let textFieldTag = 100
+let buttonTag = 1
+
+
+//  Enumeration  
+
 public struct CustomColor {
     static let red = UIColor("FF3B30")
     static let orange = UIColor("FF9500")
@@ -25,7 +63,6 @@ public struct CustomColor {
     static let black = UIColor("000000")
     static let darkGray = UIColor("6D6D72")
     static let customGray = UIColor("EFEFF4")
-
 }
 
 

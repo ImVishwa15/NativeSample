@@ -26,6 +26,11 @@
 		C3AC2BE621C10DC000FAF226 /* CGRect.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3AC2BE521C10DC000FAF226 /* CGRect.swift */; };
 		C3AC2BE821C10E0900FAF226 /* ButtonCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3AC2BE721C10E0900FAF226 /* ButtonCell.swift */; };
 		C3AC2BEB21C110C300FAF226 /* TextLabelCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3AC2BEA21C110C300FAF226 /* TextLabelCell.swift */; };
+		C3B057AF21D1E91500F1BE68 /* ForgetPasswordVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3B057AE21D1E91500F1BE68 /* ForgetPasswordVC.swift */; };
+		C3B057B121D1FFD200F1BE68 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3B057B021D1FFD200F1BE68 /* SignUpViewController.swift */; };
+		C3B057B321D2093B00F1BE68 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3B057B221D2093B00F1BE68 /* User.swift */; };
+		C3B057B521D20F8E00F1BE68 /* DropDownCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3B057B421D20F8E00F1BE68 /* DropDownCell.swift */; };
+		C3B057BE21D2109600F1BE68 /* IQDropDownTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = C3B057BD21D2109600F1BE68 /* IQDropDownTextField.m */; };
 		C3B3DDC621C0D5F5001CA040 /* UITableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3B3DDC521C0D5F5001CA040 /* UITableView.swift */; };
 		C3B3DDC821C0DA3D001CA040 /* UICollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3B3DDC721C0DA3D001CA040 /* UICollectionView.swift */; };
 		C3C9A50121BA7BB10078186F /* ConnectionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3C9A50021BA7BB10078186F /* ConnectionManager.swift */; };
@@ -116,6 +121,13 @@
 		C3AC2BE521C10DC000FAF226 /* CGRect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CGRect.swift; sourceTree = "<group>"; };
 		C3AC2BE721C10E0900FAF226 /* ButtonCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonCell.swift; sourceTree = "<group>"; };
 		C3AC2BEA21C110C300FAF226 /* TextLabelCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextLabelCell.swift; sourceTree = "<group>"; };
+		C3B057AE21D1E91500F1BE68 /* ForgetPasswordVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgetPasswordVC.swift; sourceTree = "<group>"; };
+		C3B057B021D1FFD200F1BE68 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		C3B057B221D2093B00F1BE68 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		C3B057B421D20F8E00F1BE68 /* DropDownCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DropDownCell.swift; sourceTree = "<group>"; };
+		C3B057BB21D2109500F1BE68 /* NativeSample-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NativeSample-Bridging-Header.h"; sourceTree = "<group>"; };
+		C3B057BC21D2109600F1BE68 /* IQDropDownTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IQDropDownTextField.h; sourceTree = "<group>"; };
+		C3B057BD21D2109600F1BE68 /* IQDropDownTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IQDropDownTextField.m; sourceTree = "<group>"; };
 		C3B3DDC521C0D5F5001CA040 /* UITableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITableView.swift; sourceTree = "<group>"; };
 		C3B3DDC721C0DA3D001CA040 /* UICollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UICollectionView.swift; sourceTree = "<group>"; };
 		C3C9A50021BA7BB10078186F /* ConnectionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectionManager.swift; sourceTree = "<group>"; };
@@ -243,6 +255,7 @@
 			isa = PBXGroup;
 			children = (
 				C39113B521C38EBA006701F8 /* WalkThrough.swift */,
+				C3B057B221D2093B00F1BE68 /* User.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -253,6 +266,8 @@
 				C3DF9A0F21AD4ACC00C7D245 /* AppDelegate.swift */,
 				C3DF9A1121AD4ACC00C7D245 /* WalkThroughVC.swift */,
 				C3DF9A4021AD4C8600C7D245 /* SignInViewController.swift */,
+				C3B057B021D1FFD200F1BE68 /* SignUpViewController.swift */,
+				C3B057AE21D1E91500F1BE68 /* ForgetPasswordVC.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -319,8 +334,27 @@
 				C3AC2BE321C10C4C00FAF226 /* TextFieldCell.swift */,
 				C3AC2BE721C10E0900FAF226 /* ButtonCell.swift */,
 				C3AC2BEA21C110C300FAF226 /* TextLabelCell.swift */,
+				C3B057B421D20F8E00F1BE68 /* DropDownCell.swift */,
 			);
 			path = UITableViewCell;
+			sourceTree = "<group>";
+		};
+		C3B057B621D2106200F1BE68 /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				C3B057B721D2107D00F1BE68 /* IQDropDownTextField */,
+			);
+			path = Library;
+			sourceTree = "<group>";
+		};
+		C3B057B721D2107D00F1BE68 /* IQDropDownTextField */ = {
+			isa = PBXGroup;
+			children = (
+				C3B057BC21D2109600F1BE68 /* IQDropDownTextField.h */,
+				C3B057BD21D2109600F1BE68 /* IQDropDownTextField.m */,
+				C3B057BB21D2109500F1BE68 /* NativeSample-Bridging-Header.h */,
+			);
+			path = IQDropDownTextField;
 			sourceTree = "<group>";
 		};
 		C3DF9A0321AD4ACC00C7D245 = {
@@ -371,6 +405,7 @@
 				C39113B321C38E6A006701F8 /* Model */,
 				C39113B421C38E75006701F8 /* ViewController */,
 				C3AC2BE921C1103700FAF226 /* UITableViewCell */,
+				C3B057B621D2106200F1BE68 /* Library */,
 				C3DF9A1321AD4ACC00C7D245 /* Main.storyboard */,
 				C3DF9A1921AD4ACD00C7D245 /* Assets.xcassets */,
 				C3DF9A1B21AD4ACD00C7D245 /* LaunchScreen.storyboard */,
@@ -586,6 +621,7 @@
 				TargetAttributes = {
 					C3DF9A0B21AD4ACC00C7D245 = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1010;
 					};
 					C3DF9A2221AD4ACD00C7D245 = {
 						CreatedOnToolsVersion = 10.1;
@@ -726,11 +762,13 @@
 			files = (
 				C3DF9A4B21AD621400C7D245 /* UIImageView.swift in Sources */,
 				C3DF9A4D21AD62F200C7D245 /* UIAlertController.swift in Sources */,
+				C3B057AF21D1E91500F1BE68 /* ForgetPasswordVC.swift in Sources */,
 				C3A7779F21B556A500EB4252 /* ComposeDialog.swift in Sources */,
 				C3AC2BEB21C110C300FAF226 /* TextLabelCell.swift in Sources */,
 				C3DF9A5921AD6DD600C7D245 /* URLSession.swift in Sources */,
 				C3ED62A721B131A9008D34A0 /* Array.swift in Sources */,
 				C3ED629A21B0FFC0008D34A0 /* CustomLabel.swift in Sources */,
+				C3B057B321D2093B00F1BE68 /* User.swift in Sources */,
 				C3B3DDC821C0DA3D001CA040 /* UICollectionView.swift in Sources */,
 				C3AC2BE621C10DC000FAF226 /* CGRect.swift in Sources */,
 				C3AC2BE821C10E0900FAF226 /* ButtonCell.swift in Sources */,
@@ -746,7 +784,9 @@
 				C391F4F321AE70AE0013D68B /* Badge.swift in Sources */,
 				C391F4ED21AE63790013D68B /* UILabel.swift in Sources */,
 				C3DF9A4F21AD662900C7D245 /* Generic.swift in Sources */,
+				C3B057BE21D2109600F1BE68 /* IQDropDownTextField.m in Sources */,
 				C3E5AC3321AFC9B9001E5ED6 /* Constant.swift in Sources */,
+				C3B057B521D20F8E00F1BE68 /* DropDownCell.swift in Sources */,
 				C3ED629E21B11AED008D34A0 /* CustomView.swift in Sources */,
 				C3FCBC8721BA42F30069C52C /* Spotlight.swift in Sources */,
 				C3DF9A1221AD4ACC00C7D245 /* WalkThroughVC.swift in Sources */,
@@ -779,6 +819,7 @@
 				C3A777A221B55DE500EB4252 /* ImagePickerController.swift in Sources */,
 				C3DF9A4721AD4E5900C7D245 /* Animation.swift in Sources */,
 				C3ED62A321B1317E008D34A0 /* String.swift in Sources */,
+				C3B057B121D1FFD200F1BE68 /* SignUpViewController.swift in Sources */,
 				C3ED62AB21B131C6008D34A0 /* Double.swift in Sources */,
 				C3DF9A1821AD4ACC00C7D245 /* NativeSample.xcdatamodeld in Sources */,
 			);
@@ -956,6 +997,7 @@
 			baseConfigurationReference = D7F98869CADD9BB1F7F599C5 /* Pods-NativeSample.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = NativeSample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -964,6 +1006,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "IVY-Mobilty.NativeSample";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "NativeSample/Library/IQDropDownTextField/NativeSample-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_SWIFT3_OBJC_INFERENCE = On;
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -975,6 +1019,7 @@
 			baseConfigurationReference = 78D8CEB7CFD799E1BE5F6EB3 /* Pods-NativeSample.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = NativeSample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -983,6 +1028,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "IVY-Mobilty.NativeSample";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "NativeSample/Library/IQDropDownTextField/NativeSample-Bridging-Header.h";
 				SWIFT_SWIFT3_OBJC_INFERENCE = On;
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";

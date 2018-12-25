@@ -18,6 +18,7 @@ public struct TimeFormat {
 
 // Date format
 public struct DateFormat {
+    static let MM_d_yyyy            = "MM/d/yyyy"
     static let MMDDYYYY            = "MMddYYYY"
     static let YYYY_MM_DD          = "YYYY/MM/dd"
     static let yyyy_MM_dd_T_HH_mm_ss_ssz   = "yyyy-MM-dd'T'HH:mm:ss.SSSZ"

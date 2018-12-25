@@ -63,11 +63,29 @@ extension UIViewController {
         return UIStoryboard(name: "Main", bundle: nil)
     }
     
+    // sign in view controller
     func signInVC() -> UIViewController {
         if let signVC = storyboard()?.instantiateViewController(withIdentifier: SignInViewController.identifier) as? SignInViewController {
             return signVC
         }
         return UIViewController()
     }
+    
+    // forget password view controller
+    func forgetPasswordVC() -> UIViewController {
+        if let forgetPasswordVC = storyboard()?.instantiateViewController(withIdentifier: ForgetPasswordVC.identifier) as? ForgetPasswordVC {
+            return forgetPasswordVC
+        }
+        return UIViewController()
+    }
+
+    // sign up view controller
+    func signUpVC() -> UIViewController {
+        if let signUpVC = storyboard()?.instantiateViewController(withIdentifier: SignUpViewController.identifier) as? SignUpViewController {
+            return signUpVC
+        }
+        return UIViewController()
+    }
+
 }
 

@@ -26,7 +26,7 @@ extension String {
         return validate(Regex.mobileNumber)
     }
     
-    var isEmail: Bool {
+    var isValidEmail: Bool {
         return validate(Regex.email)
     }
     

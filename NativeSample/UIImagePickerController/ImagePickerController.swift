@@ -10,7 +10,7 @@ import UIKit
 import Photos
 import AVFoundation
 
- public let KAlertTitle           =      "Premicare"
+ public let KAlertTitle           =      "Native Sample"
  public let KOk                   =      "Ok"
  public let KCancel               =      "Cancel"
  public let KSettings             =      "Settings"
