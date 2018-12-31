@@ -22,7 +22,7 @@ extension UIAlertController {
     }
     
     //MARK:  Show Message with Multiple Options
-    static func show(_ viewController: UIViewController, _ title: String?, _ message: String?, _ cancelOptions: [String]? = nil, _ destructiveOptions: [String]? = nil, _ otherOptions: [String]? = nil, _ isAlert: Bool = true, _ completion: @escaping ComplitionHandler) {
+    static func show(_ viewController: UIViewController, _ title: String?, _ message: String?, _ cancelOptions: [String]? = nil, _ otherOptions: [String]? = nil, _ destructiveOptions: [String]? = nil, _ isAlert: Bool = true, _ completion: @escaping ComplitionHandler) {
         
         let alertController = UIAlertController(title: title, message: message, preferredStyle: isAlert ? .alert : .actionSheet)
         if let cancels =  cancelOptions {

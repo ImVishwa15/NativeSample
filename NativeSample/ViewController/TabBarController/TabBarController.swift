@@ -10,17 +10,17 @@ import UIKit
 
 class TabBarController: UITabBarController {
 
+    //MARK:  Identifier
+    static var identifier: String {
+        return "TabBarController"
+    }
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
     }
     
-    //MARK:  Identifier
-    static var identifier: String {
-        return "TabBarController"
-    }
-
     /*
     // MARK: - Navigation
 

@@ -10,6 +10,7 @@ import UIKit
 
 //  Message  
 
+public let homeTitle: String = "Home"
 public let signInTitle: String = "Sign In"
 public let forgetPasswordTitle: String = "Forget Password"
 public let signUpTitle: String = "Sign Up"
@@ -36,6 +37,8 @@ public let enterConfirmPassword: String = "Please confirm password"
 public let confirmPasswordNotMatched: String = "Password and confirm password does not matched"
 public let signInComment: String = "Please enter a pair of login and password"
 public let forgetPasswordComment: String = "Please enter your registered email address to send reset password instruction"
+public let logoutConfirmation: String = "Do you want to logout?"
+public let logoutTitle: String = "Logout"
 
 
 //  Constant  

@@ -13,6 +13,7 @@ import AVFoundation
  public let KAlertTitle           =      "Native Sample"
  public let KOk                   =      "Ok"
  public let KCancel               =      "Cancel"
+ public let KYes                  =      "Yes"
  public let KSettings             =      "Settings"
  public let KGalleryPermission    =      "You need to provide permission from settings to access gallery."
  public let KCameraPermission     =      "You need to provide permission from settings to access camera."

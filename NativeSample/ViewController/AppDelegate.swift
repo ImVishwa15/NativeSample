@@ -61,8 +61,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
     
     func walkThroughViewController() {
-        if let tabBarController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: WalkThroughVC.identifier) as? WalkThroughVC {
-            self.window?.rootViewController = tabBarController
+        if let walkThroughController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: WalkThroughVC.identifier) as? WalkThroughVC {
+            self.window?.rootViewController = UINavigationController(rootViewController: walkThroughController)
         }
     }
 

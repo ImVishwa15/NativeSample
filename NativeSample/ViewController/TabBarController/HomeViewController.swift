@@ -10,24 +10,41 @@ import UIKit
 
 class HomeViewController: UIViewController {
 
+    //MARK:  Identifier
+    static var identifier: String {
+        return "HomeViewController"
+    }
+
+    // MARK:  View Life Cycle
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        initialization()
     }
     
-    @IBAction func logoutButtonAction(_ sender: UIButton) {
-        KAppDelegate.walkThroughViewController()
+    // MARK:  Button Action
+    @objc private func logoutButtonAction() {
+        UIAlertController.show(self, KAlertTitle, logoutConfirmation, [KCancel], [KYes]) { (title) in
+            if title == KYes {
+                KAppDelegate.walkThroughViewController()
+            }
+        }
     }
     
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    // MARK:  Initialization
+    private func initialization() {
+        
+        func setUpNavigationBar() {
+            self.navigationController?.isNavigationBarHidden = false
+            
+            if #available(iOS 11.0, *) {
+                self.navigationController?.navigationBar.prefersLargeTitles = true
+                self.navigationItem.largeTitleDisplayMode = .always
+            }
+            self.navigationItem.title = homeTitle
+            self.navigationItem.rightBarButtonItem = UIBarButtonItem(title: logoutTitle, style: .done, target: self, action: #selector(logoutButtonAction))
+        }
+        
+        setUpNavigationBar()
     }
-    */
-
 }

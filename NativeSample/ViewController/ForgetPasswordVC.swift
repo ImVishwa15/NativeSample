@@ -121,7 +121,7 @@ class ForgetPasswordVC: UITableViewController {
                 self.navigationController?.navigationBar.prefersLargeTitles = true
                 self.navigationItem.largeTitleDisplayMode = .always
             }
-            self.navigationItem.title = title
+            self.navigationItem.title = confirmPasswordTitle
         }
         
         func registerCell() {
